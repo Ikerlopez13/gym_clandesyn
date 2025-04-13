@@ -226,33 +226,6 @@ export default function Home() {
                 </tr>
               </tbody>
             </table>
-
-            <div className="mt-6 bg-base-200 p-4 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2 text-primary">Leyenda:</h3>
-              <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                <li className="flex items-center gap-2">
-                  <span className="text-accent">L = LIBRE</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-accent">B = BOXEO</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-accent">K = KICK BOXING</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-accent">B.I = BOXEO INFANTIL</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-accent">B.S = SPARRING BOXEO</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-accent">K.S = SPARRING KICK BOXING</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-accent">X = CERRADO</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
