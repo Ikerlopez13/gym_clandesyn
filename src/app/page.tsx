@@ -15,7 +15,7 @@ export default function Home() {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover scale-110"
+            className="w-full h-full object-cover scale-110 md:scale-110 object-center md:object-center sm:object-top sm:scale-125"
             style={{ objectPosition: 'center' }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-secondary/10 to-secondary/5"></div>
