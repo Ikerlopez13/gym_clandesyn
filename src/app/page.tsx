@@ -6,24 +6,24 @@ export default function Home() {
     <>
       <Navbar />
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-secondary text-accent pt-16">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/hero-bg.jpg"
-            alt="Hero background"
-            fill
-            className="object-cover"
-            priority
+      <section className="relative min-h-screen bg-secondary text-accent pt-16 overflow-hidden">
+        {/* Background Video with Overlay */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <video
+            src="/images/79df6a26-14fb-415a-acaa-ebb374c36567_w.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover scale-110"
+            style={{ objectPosition: 'center' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-secondary/90 to-secondary/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-secondary/10 to-secondary/5"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 tracking-tight">
-            <span className="text-primary">Clandestyn</span> Gym
-          </h1>
+        <div className="relative z-10 container mx-auto px-4 h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center mt-64">
+          
           <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-12 text-accent/90 leading-relaxed">
             Tu centro de entrenamiento especializado en artes marciales y deportes de contacto. 
             Descubre nuestras clases y mejora tu fuerza, técnica y confianza.
@@ -66,7 +66,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/gym-interior.jpg"
+                src="/images/image.png"
                 alt="Interior del gimnasio"
                 fill
                 className="object-cover rounded-lg"
@@ -75,29 +75,29 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold mb-6">Sobre Nosotros</h2>
               <p className="mb-4">
-                En Clandestyn Gym, nos especializamos en artes marciales y deportes de contacto. Contamos con más de 350 metros cuadrados de instalaciones de última generación.
+                En Clandestyn Gym, no somos el local más grande, pero sí uno de los más auténticos y mejor equipados de la ciudad. Nuestro espacio está optimizado para el entrenamiento de calidad, con material profesional, ambiente motivador y zonas perfectamente adaptadas para cada disciplina.
               </p>
               <p className="mb-6">
-                Nuestro equipo de instructores profesionales está comprometido con tu desarrollo y progreso en las artes marciales.
+                Aquí encontrarás un ambiente cercano y familiar, donde cada alumno recibe atención personalizada y se siente parte de la comunidad. Nuestro equipo de instructores profesionales está comprometido con tu progreso y bienestar, tanto si eres principiante como si buscas perfeccionar tu técnica.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
                   <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Instructores certificados
+                  Material profesional y zonas especializadas
                 </li>
                 <li className="flex items-center gap-2">
                   <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Instalaciones modernas
+                  Instructores certificados y apasionados
                 </li>
                 <li className="flex items-center gap-2">
                   <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  Ambiente inclusivo
+                  Ambiente motivador y familiar
                 </li>
               </ul>
             </div>
@@ -317,43 +317,42 @@ export default function Home() {
               {
                 title: "Boxeo",
                 description: "Aprende el noble arte del boxeo con entrenadores profesionales. Técnica, acondicionamiento físico y sparring supervisado.",
-                image: "/images/boxing.jpg"
+                image: "/images/multimedia.normal.b1de342b14649c48.bm9ybWFsLndlYnA=.webp"
               },
               {
                 title: "Kick Boxing",
                 description: "Combina técnicas de boxeo con patadas potentes. Mejora tu coordinación y aprende un sistema completo de combate de pie.",
-                image: "/images/kickboxing.jpg"
+                image: "/images/kick-boxing-barcelona-gimnasio.jpg"
               },
               {
                 title: "Boxeo Infantil",
                 description: "Clases especialmente diseñadas para niños, enfocadas en disciplina, coordinación y desarrollo físico a través del boxeo.",
-                image: "/images/boxing-kids.jpg"
+                image: "/images/nino-aprender-boxeo-clases-particulares-superprof-peru-scaled.jpg"
               },
               {
                 title: "Sparring Boxeo",
-                description: "Sesiones de práctica real supervisada para poner a prueba tus habilidades en un ambiente seguro y controlado.",
-                image: "/images/sparring.jpg"
+                description: "Sesiones de práctica real supervisada para poner a prueba tus habilidades en un ambiente seguro y controlado."
               },
               {
                 title: "Sparring Kick Boxing",
-                description: "Practica tus técnicas de kick boxing en combates reales supervisados. Para alumnos con experiencia.",
-                image: "/images/kickboxing-sparring.jpg"
+                description: "Practica tus técnicas de kick boxing en combates reales supervisados. Para alumnos con experiencia."
               },
               {
                 title: "Entrenamiento Libre",
-                description: "Acceso a las instalaciones para entrenar por tu cuenta. Incluye sacos, peras, material de entrenamiento y zona de peso libre.",
-                image: "/images/open-gym.jpg"
+                description: "Acceso a las instalaciones para entrenar por tu cuenta. Incluye sacos, peras, material de entrenamiento y zona de peso libre."
               }
             ].map((discipline, index) => (
               <div key={index} className="card bg-base-100 shadow-xl hover:scale-105 transition-transform">
-                <figure className="relative h-48">
-                  <Image
-                    src={discipline.image}
-                    alt={discipline.title}
-                    fill
-                    className="object-cover"
-                  />
-                </figure>
+                {discipline.image && (
+                  <figure className="relative h-48">
+                    <Image
+                      src={discipline.image}
+                      alt={discipline.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </figure>
+                )}
                 <div className="card-body">
                   <h3 className="card-title text-primary">{discipline.title}</h3>
                   <p className="text-accent/90">{discipline.description}</p>
