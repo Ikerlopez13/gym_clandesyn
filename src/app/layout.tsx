@@ -52,13 +52,13 @@ export default function RootLayout({
         <footer className="footer footer-center p-10 bg-neutral text-neutral-content">
           <div>
             <p className="font-bold">
-              Clandestyn Gym <br/>Tu centro de entrenamiento especializado
+              Clandestin Gym <br/>Tu centro de entrenamiento especializado
             </p>
             <p>© 2024 - Todos los derechos reservados</p>
           </div>
           <div>
             <div className="grid grid-flow-col gap-4">
-              <a href="#" className="link link-hover">Instagram</a>
+              <a href="https://instagram.com/clandestingym" target="_blank" rel="noopener noreferrer" className="link link-hover">@clandestingym</a>
               <a href="#" className="link link-hover">Facebook</a>
               <a href="#" className="link link-hover">WhatsApp</a>
             </div>

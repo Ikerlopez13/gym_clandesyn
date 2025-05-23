@@ -23,7 +23,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center mt-64">
-          
+          <h1 className="text-4xl md:text-6xl font-extrabold text-accent mb-4 drop-shadow-lg">Próxima apertura</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-12 text-accent/90 leading-relaxed">
             Tu centro de entrenamiento especializado en artes marciales y deportes de contacto. 
             Descubre nuestras clases y mejora tu fuerza, técnica y confianza.
@@ -75,10 +75,10 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold mb-6">Sobre Nosotros</h2>
               <p className="mb-4">
-                En Clandestyn Gym, no somos el local más grande, pero sí uno de los más auténticos y mejor equipados de la ciudad. Nuestro espacio está optimizado para el entrenamiento de calidad, con material profesional, ambiente motivador y zonas perfectamente adaptadas para cada disciplina.
+                En Clandestin Gym encontrarás un espacio auténtico y perfectamente equipado para el entrenamiento de calidad, con material profesional, ambiente motivador y zonas adaptadas para cada disciplina.
               </p>
               <p className="mb-6">
-                Aquí encontrarás un ambiente cercano y familiar, donde cada alumno recibe atención personalizada y se siente parte de la comunidad. Nuestro equipo de instructores profesionales está comprometido con tu progreso y bienestar, tanto si eres principiante como si buscas perfeccionar tu técnica.
+                Aquí cada alumno recibe atención personalizada y se siente parte de la comunidad. Nuestro equipo de instructores profesionales está comprometido con tu progreso y bienestar, tanto si eres principiante como si buscas perfeccionar tu técnica.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
@@ -235,30 +235,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-10">Tarifas</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card bg-base-200 shadow-xl hover:scale-105 transition-transform">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">Plan Ilimitado</h3>
-                <p className="text-3xl font-bold">45€/mes</p>
-                <ul className="space-y-2 my-4">
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    Acceso ilimitado a todas las clases
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    Sin límite de días
-                  </li>
-                </ul>
-                <div className="card-actions justify-end">
-                  <a href="#contacto" className="btn btn-primary w-full">Apúntate</a>
-                </div>
-              </div>
-            </div>
-            <div className="card bg-primary text-primary-content shadow-xl hover:scale-105 transition-transform">
+            {/* Plan 3 Días */}
+            <div className="card bg-base-200 shadow-xl hover:scale-105 transition-transform order-1 md:order-1">
               <div className="card-body">
                 <h3 className="card-title text-2xl">Plan 3 Días</h3>
                 <p className="text-3xl font-bold">35€/mes</p>
@@ -281,7 +259,32 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="card bg-base-200 shadow-xl hover:scale-105 transition-transform">
+            {/* Plan Ilimitado Destacado */}
+            <div className="card bg-yellow-400 text-black shadow-2xl border-4 border-yellow-500 hover:scale-110 transition-transform order-2 md:order-2 z-10 scale-105">
+              <div className="card-body">
+                <h3 className="card-title text-2xl font-bold">Plan Ilimitado</h3>
+                <p className="text-3xl font-extrabold">45€/mes</p>
+                <ul className="space-y-2 my-4">
+                  <li className="flex items-center gap-2">
+                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    Acceso ilimitado a todas las clases
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    Sin límite de días
+                  </li>
+                </ul>
+                <div className="card-actions justify-end">
+                  <a href="#contacto" className="btn btn-black w-full hover:bg-black/80 hover:text-yellow-400 transition-colors">¡Quiero este!</a>
+                </div>
+              </div>
+            </div>
+            {/* Plan Infantil */}
+            <div className="card bg-base-200 shadow-xl hover:scale-105 transition-transform order-3 md:order-3">
               <div className="card-body">
                 <h3 className="card-title text-2xl">Plan Infantil</h3>
                 <p className="text-3xl font-bold">25€/mes</p>
@@ -383,7 +386,7 @@ export default function Home() {
                     <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                     </svg>
-                    <p>+34 XXX XXX XXX</p>
+                    <p>644604715</p>
                   </div>
                   <div className="flex items-center gap-3">
                     <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -401,9 +404,12 @@ export default function Home() {
               <div className="card-body">
                 <h3 className="card-title text-2xl mb-4">Horario de Atención</h3>
                 <div className="space-y-2">
-                  <p><strong>Lunes a Viernes:</strong> 9:00 - 21:30</p>
-                  <p><strong>Sábados:</strong> 10:00 - 14:00</p>
+                  <p><strong>Lunes a Viernes:</strong> 0:00 - 13:00 / 16:30 - 21:30h</p>
+                  <p><strong>Sábados:</strong> 10:00 - 13:00</p>
                   <p><strong>Domingos:</strong> Cerrado</p>
+                </div>
+                <div className="mt-4">
+                  <a href="https://instagram.com/clandestingym" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">Instagram: @clandestingym</a>
                 </div>
                 <div className="mt-6">
                   <p className="font-semibold">Síguenos en redes sociales:</p>

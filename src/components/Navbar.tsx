@@ -45,6 +45,12 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
+            <li>
+              <a href="https://homo.cat" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-300 relative group">
+                Tienda
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </li>
           </ul>
           <div className="dropdown dropdown-end md:hidden">
             <label tabIndex={0} className="btn btn-ghost text-accent hover:bg-accent/10">
@@ -57,6 +63,7 @@ export default function Navbar() {
               <li><a href="#tarifas" className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">Tarifas</a></li>
               <li><a href="#disciplinas" className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">Disciplinas</a></li>
               <li><a href="#contacto" className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">Contacto</a></li>
+              <li><a href="https://homo.cat" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">Tienda</a></li>
             </ul>
           </div>
         </div>
