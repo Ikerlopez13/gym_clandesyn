@@ -22,7 +22,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center mt-64">
+        <div className="relative z-10 container mx-auto px-4 h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center mt-32 md:mt-64">
           <h1 className="text-4xl md:text-6xl font-extrabold text-accent mb-4 drop-shadow-lg">Próxima apertura</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-12 text-accent/90 leading-relaxed">
             Tu centro de entrenamiento especializado en artes marciales y deportes de contacto. 
@@ -404,7 +404,7 @@ export default function Home() {
               <div className="card-body">
                 <h3 className="card-title text-2xl mb-4">Horario de Atención</h3>
                 <div className="space-y-2">
-                  <p><strong>Lunes a Viernes:</strong> 90:00 - 13:00 / 16:30 - 21:30h</p>
+                  <p><strong>Lunes a Viernes:</strong> 9:00 - 13:00 / 16:30 - 21:30h</p>
                   <p><strong>Sábados:</strong> 10:00 - 13:00</p>
                   <p><strong>Domingos:</strong> Cerrado</p>
                 </div>
