@@ -19,6 +19,8 @@ export default function Home() {
             style={{ objectPosition: 'center' }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-secondary/10 to-secondary/5"></div>
+          {/* Black gradient overlay for better text readability */}
+          <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/90 via-black/60 to-transparent"></div>
         </div>
 
         {/* Content */}
@@ -395,18 +397,11 @@ export default function Home() {
                     <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
-                    <p>info@clandestyngym.com</p>
-                  </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 12v1m0 4h.01M12 12v1m0 4h.01M8 12v1m0 4h.01M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z" />
-                    </svg>
                     <p>clandestingym@gmail.com</p>
                   </div>
                 </div>
                 <div className="card-actions justify-end mt-6">
-                  <a href="mailto:info@clandestyngym.com" className="btn btn-primary">Enviar Email</a>
+                  <a href="mailto:clandestingym@gmail.com" className="btn btn-primary">Enviar Email</a>
                 </div>
               </div>
             </div>
