@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Clandestyn Gym",
+  title: "Clandestin Gym",
   description: "Tu centro de entrenamiento especializado en artes marciales y deportes de contacto.",
   icons: {
     icon: '/images/logo.png',
@@ -35,7 +35,7 @@ export default function RootLayout({
                 <li><a href="#contacto">Contacto</a></li>
               </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-xl">Clandestyn Gym</a>
+            <a className="btn btn-ghost normal-case text-xl">Clandestin Gym</a>
           </div>
           <div className="navbar-end hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
@@ -52,7 +52,7 @@ export default function RootLayout({
         <footer className="footer footer-center p-10 bg-neutral text-neutral-content">
           <div>
             <p className="font-bold">
-                              Clandestyn Gym <br/>Tu centro de entrenamiento especializado
+                              Clandestin Gym <br/>Tu centro de entrenamiento especializado
             </p>
             <p>© 2024 - Todos los derechos reservados</p>
           </div>

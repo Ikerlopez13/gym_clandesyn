@@ -77,7 +77,7 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold mb-6">Sobre Nosotros</h2>
               <p className="mb-4">
-                En Clandestyn Gym encontrarás un espacio auténtico y perfectamente equipado para el entrenamiento de calidad, con material profesional, ambiente motivador y zonas adaptadas para cada disciplina.
+                En Clandestin Gym encontrarás un espacio auténtico y perfectamente equipado para el entrenamiento de calidad, con material profesional, ambiente motivador y zonas adaptadas para cada disciplina.
               </p>
               <p className="mb-6">
                 Aquí cada alumno recibe atención personalizada y se siente parte de la comunidad. Nuestro equipo de instructores profesionales está comprometido con tu progreso y bienestar, tanto si eres principiante como si buscas perfeccionar tu técnica.
