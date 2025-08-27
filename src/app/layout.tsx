@@ -52,7 +52,7 @@ export default function RootLayout({
         <footer className="footer footer-center p-10 bg-neutral text-neutral-content">
           <div>
             <p className="font-bold">
-              Clandestin Gym <br/>Tu centro de entrenamiento especializado
+                              Clandestyn Gym <br/>Tu centro de entrenamiento especializado
             </p>
             <p>© 2024 - Todos los derechos reservados</p>
           </div>

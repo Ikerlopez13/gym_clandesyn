@@ -11,7 +11,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/logo.png"
-              alt="Clandestin Boxing Gym Logo"
+              alt="Clandestyn Boxing Gym Logo"
               width={180}
               height={60}
               className="object-contain"

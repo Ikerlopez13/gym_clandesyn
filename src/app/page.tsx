@@ -77,7 +77,7 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold mb-6">Sobre Nosotros</h2>
               <p className="mb-4">
-                En Clandestin Gym encontrarás un espacio auténtico y perfectamente equipado para el entrenamiento de calidad, con material profesional, ambiente motivador y zonas adaptadas para cada disciplina.
+                En Clandestyn Gym encontrarás un espacio auténtico y perfectamente equipado para el entrenamiento de calidad, con material profesional, ambiente motivador y zonas adaptadas para cada disciplina.
               </p>
               <p className="mb-6">
                 Aquí cada alumno recibe atención personalizada y se siente parte de la comunidad. Nuestro equipo de instructores profesionales está comprometido con tu progreso y bienestar, tanto si eres principiante como si buscas perfeccionar tu técnica.
@@ -242,7 +242,7 @@ export default function Home() {
               <div className="card-body">
                 <h3 className="card-title text-2xl">Plan 3 Días</h3>
                 <p className="text-3xl font-bold">35€/mes</p>
-                <p className="text-base text-accent/80 mb-2">+ 30€ de matrícula</p>
+                <p className="text-base text-accent/80 mb-2">+ 35€ de matrícula</p>
                 <ul className="space-y-2 my-4">
                   <li className="flex items-center gap-2">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -267,7 +267,7 @@ export default function Home() {
               <div className="card-body">
                 <h3 className="card-title text-2xl font-bold">Plan Ilimitado</h3>
                 <p className="text-3xl font-extrabold">45€/mes</p>
-                <p className="text-base text-black/80 mb-2">+ 30€ de matrícula</p>
+                <p className="text-base text-black/80 mb-2">+ 35€ de matrícula</p>
                 <ul className="space-y-2 my-4">
                   <li className="flex items-center gap-2">
                     <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -291,8 +291,8 @@ export default function Home() {
             <div className="card bg-base-200 shadow-xl hover:scale-105 transition-transform order-3 md:order-3">
               <div className="card-body">
                 <h3 className="card-title text-2xl">Plan Infantil</h3>
-                <p className="text-3xl font-bold">25€/mes</p>
-                <p className="text-base text-accent/80 mb-2">+ 30€ de matrícula</p>
+                <p className="text-3xl font-bold">30€/mes</p>
+                <p className="text-base text-accent/80 mb-2">+ 35€ de matrícula</p>
                 <ul className="space-y-2 my-4">
                   <li className="flex items-center gap-2">
                     <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">

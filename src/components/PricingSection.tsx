@@ -29,7 +29,7 @@ const pricingPlans = [
   },
   {
     name: 'Infantil',
-    price: '25€',
+    price: '30€',
     period: '/mes',
     description: 'Clases especiales para niños',
     features: [
