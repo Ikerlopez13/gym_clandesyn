@@ -116,10 +116,17 @@ export default function RequirementsPage() {
                         <li>Comunica al instructor si tienes alguna lesión o condición especial</li>
                         <li>¡Mantén una actitud positiva y disfruta de la experiencia!</li>
                       </ul>
+                      <div className="mt-4 p-4 bg-warning/20 rounded-lg border-l-4 border-warning">
+                        <p className="font-semibold text-warning">⚠️ Importante:</p>
+                        <p className="text-sm">No se presta material. Hay que venir con todo preparado.</p>
+                      </div>
                     </div>
                   </li>
                 </ul>
-                <div className="card-actions justify-end mt-6">
+                <div className="card-actions justify-between mt-6">
+                  <a href="https://homo.cat/guantes-de-boxeo-equipaciones-material-de-entreno-y-protecciones-de-artes-marciales/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                    🛒 Comprar Material
+                  </a>
                   <a href="mailto:clandestingym@gmail.com" className="btn btn-primary">
                     Consultar Dudas
                   </a>

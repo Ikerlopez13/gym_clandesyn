@@ -59,8 +59,7 @@ export default function RootLayout({
           <div>
             <div className="grid grid-flow-col gap-4">
               <a href="https://www.instagram.com/clandestinboxinggym/" target="_blank" rel="noopener noreferrer" className="link link-hover">@clandestinboxinggym</a>
-              <a href="#" className="link link-hover">Facebook</a>
-              <a href="#" className="link link-hover">WhatsApp</a>
+              <a href="https://wa.me/34644604715" target="_blank" rel="noopener noreferrer" className="link link-hover">WhatsApp</a>
             </div>
           </div>
         </footer>
