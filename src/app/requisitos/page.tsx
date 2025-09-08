@@ -112,7 +112,7 @@ export default function RequirementsPage() {
                       <p className="mb-2">Para tu primera clase:</p>
                       <ul className="list-disc list-inside ml-4 space-y-1 text-accent/80">
                         <li>Llega 10-15 minutos antes para familiarizarte con las instalaciones</li>
-                        <li>Trae ropa cómoda, el resto del material lo puedes adquirir después</li>
+                        <li>Trae ropa cómoda y, como mínimo, guantes de boxeo; el resto del material lo puedes adquirir después</li>
                         <li>Comunica al instructor si tienes alguna lesión o condición especial</li>
                         <li>¡Mantén una actitud positiva y disfruta de la experiencia!</li>
                       </ul>

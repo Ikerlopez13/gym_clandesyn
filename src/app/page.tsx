@@ -7,15 +7,14 @@ export default function Home() {
       <Navbar />
       {/* Hero Section */}
       <section className="relative min-h-screen bg-secondary text-accent pt-16 overflow-hidden">
-        {/* Background Video with Overlay */}
+        {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <video
-            src="/images/79df6a26-14fb-415a-acaa-ebb374c36567_w.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover scale-110 md:scale-110 object-center md:object-center sm:object-top sm:scale-125"
+          <Image
+            src="/images/DSC_0359[1].JPG"
+            alt="Hero background"
+            fill
+            priority
+            className="object-cover scale-110 md:scale-110 object-center md:object-center sm:object-top sm:scale-125"
             style={{ objectPosition: 'center' }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-secondary/10 to-secondary/5"></div>
@@ -62,13 +61,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Instalaciones (Bento Grid) */}
+      <section className="py-20 bg-base-200">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-10">Instalaciones</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[120px] gap-4">
+            <div className="row-span-2 col-span-2 relative rounded-lg overflow-hidden">
+              <Image src="/images/DSC_0359[1].JPG" alt="Ring" fill className="object-cover" />
+            </div>
+            <div className="relative rounded-lg overflow-hidden">
+              <Image src="/images/DSC_0355[1].JPG" alt="Mancuernas" fill className="object-cover" />
+            </div>
+            <div className="relative rounded-lg overflow-hidden">
+              <Image src="/images/DSC_0345[1].JPG" alt="Máquina" fill className="object-cover" />
+            </div>
+            <div className="row-span-2 relative rounded-lg overflow-hidden">
+              <Image src="/images/DSC_0356[1].JPG" alt="Zona cardio" fill className="object-cover" />
+            </div>
+            <div className="relative rounded-lg overflow-hidden">
+              <Image src="/images/DSC_0360[1].JPG" alt="Sacos" fill className="object-cover" />
+            </div>
+            <div className="relative rounded-lg overflow-hidden">
+              <Image src="/images/DSC_0354[1].JPG" alt="Remo" fill className="object-cover" />
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <a href="/instalaciones" className="btn btn-primary">Ver todas</a>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section className="py-20 bg-base-100">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/image.png"
+                src="/images/DSC_0357[2].JPG"
                 alt="Interior del gimnasio"
                 fill
                 className="object-cover rounded-lg"
@@ -110,7 +139,8 @@ export default function Home() {
       {/* Schedule Section */}
       <section id="horarios" className="py-20 bg-base-200">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-10">Horarios</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">Horarios</h2>
+          <p className="text-center text-sm text-accent/70 mb-6">Desliza horizontalmente para ver el horario completo en móvil.</p>
           <div className="overflow-x-auto">
             <table className="table table-zebra w-full bg-base-100">
               <thead>
@@ -133,7 +163,7 @@ export default function Home() {
                   <td>LIBRE</td>
                   <td>LIBRE</td>
                   <td>LIBRE</td>
-                  <td>LIBRE</td>
+                  <td>X</td>
                   <td>X</td>
                 </tr>
                 <tr>
