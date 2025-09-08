@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Navbar />
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-secondary text-accent pt-16 overflow-hidden">
+      <section className="relative min-h-[70vh] md:min-h-screen bg-secondary text-accent pt-16 overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
@@ -14,7 +14,7 @@ export default function Home() {
             alt="Hero background"
             fill
             priority
-            className="object-cover scale-110 md:scale-110 object-center md:object-center sm:object-top sm:scale-125"
+            className="object-cover scale-100 sm:scale-105 md:scale-110 object-center"
             style={{ objectPosition: 'center' }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-secondary/20 via-secondary/10 to-secondary/5"></div>
@@ -23,7 +23,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 h-[calc(100vh-6rem)] flex flex-col justify-center items-center text-center mt-40 md:mt-72">
+        <div className="relative z-10 container mx-auto px-4 h-[calc(70vh-6rem)] md:h-[calc(100vh-6rem)] flex flex-col justify-center items-center text-center mt-32 md:mt-72">
           <h1 className="text-4xl md:text-6xl font-extrabold text-accent mb-4 drop-shadow-lg">Próxima apertura</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-12 text-accent/90 leading-relaxed">
             Tu centro de entrenamiento especializado en artes marciales y deportes de contacto. 
