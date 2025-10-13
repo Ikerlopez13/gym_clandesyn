@@ -25,9 +25,6 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 h-[calc(70vh-6rem)] md:h-[calc(100vh-6rem)] flex flex-col justify-center items-center text-center mt-32 md:mt-72">
           <h1 className="text-4xl md:text-6xl font-extrabold text-accent mb-4 drop-shadow-lg">Clandestin Gym</h1>
-          <p className="text-2xl md:text-3xl font-semibold text-primary mb-6 drop-shadow-md">
-            Entrena sin límites en Barcelona
-          </p>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-12 text-accent/90 leading-relaxed">
             Tu centro de entrenamiento especializado en artes marciales y deportes de contacto. 
             Descubre nuestras clases y mejora tu fuerza, técnica y confianza.
