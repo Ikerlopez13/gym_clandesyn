@@ -61,6 +61,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Motivational Video Section */}
+      <section className="relative py-24 bg-gradient-to-b from-black via-secondary to-secondary/90 text-accent overflow-hidden">
+        <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#fbbf24_0%,_transparent_55%)]" />
+        </div>
+        <div className="relative container mx-auto px-4 grid gap-12 lg:grid-cols-2 items-center">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-primary/40 aspect-video">
+            <div className="absolute inset-0 bg-gradient-to-tr from-black/80 via-transparent to-black/50 pointer-events-none" />
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              src="/images/C0002.MP4"
+              className="absolute inset-0 w-full h-full object-cover transform-gpu -rotate-90 scale-[1.35] origin-center"
+            />
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute top-0 left-0 right-0 px-5 pt-5 flex justify-between items-center text-[0.65rem] font-mono uppercase tracking-[0.35em] text-primary/90">
+                <span className="flex items-center gap-2">
+                  <span className="inline-flex h-2 w-2 rounded-full bg-red-500 animate-pulse" />
+                  REC
+                </span>
+                <span className="tracking-[0.2em] text-primary/70">ISO400 • F1.8 • 1/60</span>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 px-5 pb-5 flex justify-between items-end text-[0.65rem] font-mono uppercase tracking-[0.3em] text-primary/80">
+                <span>00:24:17</span>
+                <span className="text-primary">CLANDESTIN GYM</span>
+                <span>AF • 4K</span>
+              </div>
+              <div className="absolute top-4 left-4 h-10 w-10 border-l border-t border-primary/60" />
+              <div className="absolute top-4 right-4 h-10 w-10 border-r border-t border-primary/60" />
+              <div className="absolute bottom-4 left-4 h-10 w-10 border-l border-b border-primary/60" />
+              <div className="absolute bottom-4 right-4 h-10 w-10 border-r border-b border-primary/60" />
+            </div>
+          </div>
+          <div className="space-y-6">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">Espíritu de lucha</p>
+            <blockquote className="text-3xl md:text-4xl font-extrabold leading-tight">
+              “Si mi mente puede concebirlo y mi corazón puede creerlo, entonces puedo lograrlo.”
+            </blockquote>
+            <p className="text-lg text-accent/80">Muhammad Ali</p>
+            <p className="text-xl md:text-2xl font-semibold text-accent">Aprende boxeo para todos los niveles</p>
+            <div className="flex flex-wrap gap-4">
+              <a href="#tarifas" className="btn btn-primary btn-lg text-secondary">
+                Empieza hoy
+              </a>
+              <a href="#contacto" className="btn btn-outline btn-lg border-primary text-primary hover:bg-primary hover:text-secondary">
+                Habla con un entrenador
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Instalaciones (Bento Grid) */}
       <section className="py-20 bg-base-200">
         <div className="container mx-auto px-4">
@@ -355,17 +409,20 @@ export default function Home() {
               {
                 title: "Boxeo",
                 description: "Aprende el noble arte del boxeo con entrenadores profesionales. Técnica, acondicionamiento físico y sparring supervisado.",
-                image: "/images/multimedia.normal.b1de342b14649c48.bm9ybWFsLndlYnA=.webp"
+                image: "/images/conjunta.JPG",
+                objectPosition: "center 35%"
               },
               {
                 title: "Kick/Thai",
                 description: "Combina técnicas de boxeo con patadas potentes. Mejora tu coordinación y aprende un sistema completo de combate de pie.",
-                image: "/images/kick-boxing-barcelona-gimnasio.jpg"
+                image: "/images/pol.JPG",
+                objectPosition: "center 35%"
               },
               {
                 title: "Boxeo Infantil",
                 description: "Clases especialmente diseñadas para niños, enfocadas en disciplina, coordinación y desarrollo físico a través del boxeo.",
-                image: "/images/nino-aprender-boxeo-clases-particulares-superprof-peru-scaled.jpg"
+                image: "/images/iker.JPG",
+                objectPosition: "center 35%"
               },
               {
                 title: "Sparring Boxeo",
@@ -387,7 +444,9 @@ export default function Home() {
                       src={discipline.image}
                       alt={discipline.title}
                       fill
+                      unoptimized
                       className="object-cover"
+                      style={discipline.objectPosition ? { objectPosition: discipline.objectPosition } : undefined}
                     />
                   </figure>
                 )}
