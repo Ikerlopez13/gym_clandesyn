@@ -170,6 +170,18 @@ export default function Home() {
                   <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
+                  Grupos reducidos 12 personas por clase
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  atención personalizada
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
                   Material profesional y zonas especializadas
                 </li>
                 <li className="flex items-center gap-2">
@@ -234,7 +246,7 @@ export default function Home() {
                   <td>11:00 - 12:00</td>
                   <td>KICK/THAI</td>
                   <td>BOXEO</td>
-                  <td>BOXEO</td>
+                  <td>KICK/THAI</td>
                   <td>KICK/THAI</td>
                   <td>BOXEO</td>
                   <td>LIBRE</td>
@@ -273,7 +285,7 @@ export default function Home() {
                 <tr>
                   <td>17:00 - 18:00</td>
                   <td>LIBRE</td>
-                  <td>KICK/THAI</td>
+                  <td>LIBRE</td>
                   <td>LIBRE</td>
                   <td>KICK/THAI</td>
                   <td>Sparring Kick/Thai</td>
@@ -292,7 +304,7 @@ export default function Home() {
                 </tr>
                 <tr>
                   <td>19:00 - 20:00</td>
-                  <td>LIBRE</td>
+                  <td>Circuito físico</td>
                   <td>BOXEO</td>
                   <td>LIBRE</td>
                   <td>BOXEO</td>
@@ -301,9 +313,9 @@ export default function Home() {
                   <td>X</td>
                 </tr>
                 <tr>
-                  <td>20:00 - 21:30</td>
+                  <td>20:00 - 21:00</td>
                   <td>LIBRE</td>
-                  <td>LIBRE</td>
+                  <td>KICK/THAI</td>
                   <td>LIBRE</td>
                   <td>LIBRE</td>
                   <td>LIBRE</td>

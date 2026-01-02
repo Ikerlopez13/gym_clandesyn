@@ -31,9 +31,14 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
+                <Link href="/metodologia" className="hover:text-primary transition-colors duration-300 relative group">
+                  Metodología
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/instalaciones" className="hover:text-primary transition-colors duration-300 relative group">
                   Instalaciones
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
               <li>
@@ -85,6 +90,7 @@ export default function Navbar() {
                 <li><Link href="/#horarios" onClick={() => setIsOpen(false)} className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">Horarios</Link></li>
                 <li><Link href="/#tarifas" onClick={() => setIsOpen(false)} className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">Tarifas</Link></li>
                 <li><Link href="/#disciplinas" onClick={() => setIsOpen(false)} className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">Disciplinas</Link></li>
+                <li><Link href="/metodologia" onClick={() => setIsOpen(false)} className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">Metodología</Link></li>
                 <li><Link href="/instalaciones" onClick={() => setIsOpen(false)} className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">Instalaciones</Link></li>
                 <li><Link href="/requisitos" onClick={() => setIsOpen(false)} className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">¿Qué necesitas?</Link></li>
                 <li><Link href="/#contacto" onClick={() => setIsOpen(false)} className="text-accent hover:text-primary hover:bg-accent/5 py-3 transition-colors duration-300">Contacto</Link></li>
