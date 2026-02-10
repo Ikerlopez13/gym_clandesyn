@@ -31,7 +31,7 @@ const pricingPlans = [
     name: 'Infantil',
     price: '30€',
     period: '/mes',
-    description: 'Clases especiales para niños',
+    description: 'Clases especiales para niños (7 a 11 años)',
     features: [
       'Clases adaptadas por edad',
       'Instructores especializados',
@@ -51,10 +51,10 @@ export default function PricingSection() {
             Elige el plan que mejor se adapte a tus necesidades
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pricingPlans.map((plan, index) => (
-            <div 
+            <div
               key={plan.name}
               className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300"
             >
@@ -68,16 +68,16 @@ export default function PricingSection() {
                 <ul className="space-y-3 mb-6">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
-                      <svg 
-                        className="w-5 h-5 text-primary mr-2" 
-                        fill="none" 
-                        stroke="currentColor" 
+                      <svg
+                        className="w-5 h-5 text-primary mr-2"
+                        fill="none"
+                        stroke="currentColor"
                         viewBox="0 0 24 24"
                       >
-                        <path 
-                          strokeLinecap="round" 
-                          strokeLinejoin="round" 
-                          strokeWidth="2" 
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M5 13l4 4L19 7"
                         />
                       </svg>

@@ -287,7 +287,7 @@ export default function Home() {
                   <td>LIBRE</td>
                   <td>LIBRE</td>
                   <td>LIBRE</td>
-                  <td>KICK/THAI</td>
+                  <td>LIBRE</td>
                   <td>Sparring Kick/Thai</td>
                   <td>X</td>
                   <td>X</td>
@@ -296,7 +296,7 @@ export default function Home() {
                   <td>18:00 - 19:00</td>
                   <td>LIBRE</td>
                   <td>Boxeo Infantil</td>
-                  <td>LIBRE</td>
+                  <td>BOXEO</td>
                   <td>Boxeo Infantil</td>
                   <td>Boxeo Infantil</td>
                   <td>X</td>
@@ -306,7 +306,7 @@ export default function Home() {
                   <td>19:00 - 20:00</td>
                   <td>Circuito físico</td>
                   <td>BOXEO</td>
-                  <td>LIBRE</td>
+                  <td>Boxeo Físico</td>
                   <td>BOXEO</td>
                   <td>Sparring Boxeo</td>
                   <td>X</td>
@@ -314,10 +314,10 @@ export default function Home() {
                 </tr>
                 <tr>
                   <td>20:00 - 21:00</td>
-                  <td>LIBRE</td>
+                  <td>BOXEO</td>
                   <td>KICK/THAI</td>
                   <td>LIBRE</td>
-                  <td>LIBRE</td>
+                  <td>KICK/THAI</td>
                   <td>LIBRE</td>
                   <td>X</td>
                   <td>X</td>
@@ -394,7 +394,7 @@ export default function Home() {
                     <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    Clases especiales para niños
+                    Clases especiales para niños (7 a 11 años)
                   </li>
                   <li className="flex items-center gap-2">
                     <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
