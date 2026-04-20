@@ -288,7 +288,7 @@ export default function Home() {
                   <td>LIBRE</td>
                   <td>LIBRE</td>
                   <td>LIBRE</td>
-                  <td>Sparring Kick/Thai</td>
+                  <td>Boxeo Infantil</td>
                   <td>X</td>
                   <td>X</td>
                 </tr>
@@ -298,7 +298,7 @@ export default function Home() {
                   <td>Boxeo Infantil</td>
                   <td>BOXEO</td>
                   <td>Boxeo Infantil</td>
-                  <td>Boxeo Infantil</td>
+                  <td>KICK/THAI</td>
                   <td>X</td>
                   <td>X</td>
                 </tr>
