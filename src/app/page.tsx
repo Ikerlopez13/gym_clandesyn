@@ -288,16 +288,16 @@ export default function Home() {
                   <td>LIBRE</td>
                   <td>LIBRE</td>
                   <td>LIBRE</td>
-                  <td>Boxeo Infantil</td>
+                  <td>Boxeo Infantil (17:10)</td>
                   <td>X</td>
                   <td>X</td>
                 </tr>
                 <tr>
                   <td>18:00 - 19:00</td>
                   <td>LIBRE</td>
-                  <td>Boxeo Infantil</td>
+                  <td>Boxeo Infantil (18:10)</td>
                   <td>BOXEO</td>
-                  <td>Boxeo Infantil</td>
+                  <td>Boxeo Infantil (18:10)</td>
                   <td>KICK/THAI</td>
                   <td>X</td>
                   <td>X</td>
