@@ -287,7 +287,7 @@ export default function Home() {
                   <td>LIBRE</td>
                   <td>LIBRE</td>
                   <td>LIBRE</td>
-                  <td>LIBRE</td>
+                  <td>Boxeo Iniciación (17:00)</td>
                   <td>Boxeo Infantil (17:10)</td>
                   <td>X</td>
                   <td>X</td>
