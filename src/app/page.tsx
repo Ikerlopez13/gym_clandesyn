@@ -331,84 +331,92 @@ export default function Home() {
       {/* Pricing Section */}
       <section id="tarifas" className="py-20 bg-base-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-10">Tarifas</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Plan 3 Días */}
-            <div className="card bg-base-200 shadow-xl hover:scale-105 transition-transform order-1 md:order-1">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">Plan 3 Días</h3>
-                <p className="text-3xl font-bold">45€/mes</p>
-                <p className="text-base text-accent/80 mb-2">+ 35€ de matrícula</p>
-                <ul className="space-y-2 my-4">
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    3 días por semana
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Acceso a todas las clases
-                  </li>
-                </ul>
-                <div className="card-actions justify-end">
-                  <a href="#contacto" className="btn btn-secondary w-full">Apúntate</a>
+          <h2 className="text-4xl font-bold text-center mb-2">Tarifas</h2>
+          <p className="text-center text-accent/70 mb-10">Boxeo · Kickboxing · Muay Thai</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                name: '3 Días',
+                price: '45€',
+                description: 'Todas las disciplinas, 3 días a la semana.',
+                available: false,
+              },
+              {
+                name: 'Ilimitado',
+                price: '55€',
+                description: 'Todas las disciplinas, sin límite de días.',
+                available: false,
+                featured: true,
+              },
+              {
+                name: 'Kick/Thai',
+                price: '40€',
+                description: 'Kickboxing y Muay Thai, sin límite de días.',
+                available: true,
+              },
+              {
+                name: 'Solo Mañanas',
+                price: '45€',
+                description: 'Todas las disciplinas, de 9:00 a 13:00, sin límite de días.',
+                available: true,
+              },
+              {
+                name: 'Infantil',
+                price: '40€',
+                description: 'Clases infantiles (7–11 años), 3 días a la semana.',
+                available: true,
+              },
+            ].map((plan) => (
+              <div
+                key={plan.name}
+                className={`card shadow-xl hover:scale-105 transition-transform ${
+                  plan.featured
+                    ? 'bg-yellow-400 text-black border-4 border-yellow-500 shadow-2xl lg:scale-105 z-10'
+                    : 'bg-base-200'
+                }`}
+              >
+                <div className="card-body">
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="card-title text-2xl min-w-0">{plan.name}</h3>
+                    <span
+                      className={`badge badge-sm font-semibold shrink-0 whitespace-nowrap ${
+                        plan.available ? 'badge-success text-white' : 'badge-warning text-black'
+                      }`}
+                    >
+                      {plan.available ? 'Plazas disponibles' : 'Lista de espera'}
+                    </span>
+                  </div>
+                  <div className="flex items-baseline gap-1 mt-2">
+                    <span className="text-3xl font-extrabold">{plan.price}</span>
+                    <span className={plan.featured ? 'text-black/70' : 'text-accent/70'}>/mes</span>
+                  </div>
+                  <p className={`mt-2 ${plan.featured ? 'text-black/80' : 'text-accent/80'}`}>
+                    {plan.description}
+                  </p>
+                  <div className="card-actions justify-end mt-4">
+                    {plan.available ? (
+                      <a href="#contacto" className={`btn w-full ${plan.featured ? 'btn-black hover:bg-black/80 hover:text-yellow-400' : 'btn-primary'}`}>
+                        Apúntate
+                      </a>
+                    ) : (
+                      <a
+                        href="https://wa.me/34644604715"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`btn w-full ${plan.featured ? 'btn-black hover:bg-black/80 hover:text-yellow-400' : 'btn-secondary'}`}
+                      >
+                        Unirme a la lista de espera
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-            {/* Plan Ilimitado Destacado */}
-            <div className="card bg-yellow-400 text-black shadow-2xl border-4 border-yellow-500 hover:scale-110 transition-transform order-2 md:order-2 z-10 scale-105">
-              <div className="card-body">
-                <h3 className="card-title text-2xl font-bold">Plan Ilimitado</h3>
-                <p className="text-3xl font-extrabold">55€/mes</p>
-                <p className="text-base text-black/80 mb-2">+ 35€ de matrícula</p>
-                <ul className="space-y-2 my-4">
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Acceso ilimitado a todas las clases
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Sin límite de días
-                  </li>
-                </ul>
-                <div className="card-actions justify-end">
-                  <a href="#contacto" className="btn btn-black w-full hover:bg-black/80 hover:text-yellow-400 transition-colors">¡Quiero este!</a>
-                </div>
-              </div>
-            </div>
-            {/* Plan Infantil */}
-            <div className="card bg-base-200 shadow-xl hover:scale-105 transition-transform order-3 md:order-3">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">Plan Infantil</h3>
-                <p className="text-3xl font-bold">40€/mes</p>
-                <p className="text-base text-accent/80 mb-2">+ 35€ de matrícula</p>
-                <ul className="space-y-2 my-4">
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Clases especiales para niños (7 a 11 años)
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Instructores especializados
-                  </li>
-                </ul>
-                <div className="card-actions justify-end">
-                  <a href="#contacto" className="btn btn-primary w-full">Apúntate</a>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
+          <p className="text-center text-sm text-accent/70 mt-10 max-w-2xl mx-auto">
+            + 35€ de matrícula única (pago solo en el alta) en todas las tarifas. Lista de espera:
+            te avisamos por orden de inscripción en cuanto se libere una plaza.
+          </p>
         </div>
       </section>
 
