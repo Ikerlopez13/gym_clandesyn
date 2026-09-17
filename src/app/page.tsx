@@ -400,7 +400,7 @@ export default function Home() {
                       </a>
                     ) : (
                       <a
-                        href="https://wa.me/34644604715"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeFYhv7AgON5FG9yBJ62255z7xjpLTsmBmd9MyON4rpgUedAw/viewform?pli=1"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`btn w-full ${plan.featured ? 'btn-black hover:bg-black/80 hover:text-yellow-400' : 'btn-secondary'}`}
