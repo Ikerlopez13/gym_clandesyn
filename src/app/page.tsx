@@ -4,7 +4,33 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar inFlow />
+      <aside aria-labelledby="lista-prioritaria-titulo" className="border-b border-yellow-400/25 bg-gradient-to-r from-yellow-400/10 via-secondary to-yellow-400/10 text-accent">
+        <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 py-4 text-center lg:flex-row lg:gap-8 lg:text-left">
+          <div className="max-w-xl">
+            <h2 id="lista-prioritaria-titulo" className="flex items-center justify-center gap-2 text-sm font-extrabold tracking-wide text-yellow-400 lg:justify-start">
+              <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-full bg-yellow-400" />
+              AHORA MISMO ESTAMOS COMPLETOS
+            </h2>
+            <p className="mt-1 text-sm text-accent/80">
+              Grupos reducidos, atención real. Te avisamos cuando se libere una plaza o abramos un nuevo horario.
+            </p>
+          </div>
+          <div className="w-full shrink-0 sm:w-auto">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeFYhv7AgON5FG9yBJ62255z7xjpLTsmBmd9MyON4rpgUedAw/viewform?pli=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-yellow-400 px-5 py-3 text-sm font-extrabold text-black transition-colors hover:bg-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-400"
+            >
+              <span aria-hidden="true">🔥</span>
+              ENTRAR EN LA LISTA PRIORITARIA
+              <span aria-hidden="true">↗</span>
+            </a>
+            <p className="mt-1.5 text-center text-xs text-accent/60">Gratis · Sin compromiso</p>
+          </div>
+        </div>
+      </aside>
       {/* Hero Section */}
       <section className="relative min-h-[70vh] md:min-h-screen bg-secondary text-accent pt-16 overflow-hidden">
         {/* Background Image with Overlay */}
@@ -325,31 +351,6 @@ export default function Home() {
               </tbody>
             </table>
           </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="lista-prioritaria-titulo" className="bg-base-200 px-4 py-16">
-        <div className="mx-auto max-w-3xl rounded-2xl border border-yellow-400/40 bg-base-100 px-6 py-10 text-center shadow-xl sm:px-10">
-          <h2 id="lista-prioritaria-titulo" className="text-3xl font-extrabold text-primary sm:text-4xl">
-            AHORA MISMO ESTAMOS COMPLETOS
-          </h2>
-          <p className="mt-6 text-lg text-accent/80">
-            Nuestros grupos mantienen un número reducido de personas para garantizar una atención real durante cada entrenamiento.
-          </p>
-          <p className="mt-6 text-xl font-bold">¿Quieres entrenar con nosotros?</p>
-          <p className="mt-3 text-lg text-accent/80">
-            Te avisaremos antes que a nadie cuando se libere una plaza o abramos un nuevo horario.
-          </p>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeFYhv7AgON5FG9yBJ62255z7xjpLTsmBmd9MyON4rpgUedAw/viewform?pli=1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-flex min-h-16 w-full items-center justify-center gap-2 rounded-xl bg-yellow-400 px-5 py-5 text-lg font-extrabold text-black transition-colors hover:bg-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow-400 sm:w-auto sm:px-10"
-          >
-            <span aria-hidden="true">🔥</span>
-            <span>ENTRAR EN LA LISTA PRIORITARIA</span>
-          </a>
-          <p className="mt-3 text-sm text-accent/70">Gratis · Sin compromiso</p>
         </div>
       </section>
 

@@ -4,11 +4,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function Navbar() {
+export default function Navbar({ inFlow = false }: { inFlow?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="navbar bg-gradient-to-r from-secondary via-secondary/95 to-secondary/90 backdrop-blur-sm text-accent fixed top-0 z-50 border-b border-accent/10">
+    <div className={`navbar bg-gradient-to-r from-secondary via-secondary/95 to-secondary/90 backdrop-blur-sm text-accent ${inFlow ? 'sticky' : 'fixed'} top-0 z-50 border-b border-accent/10`}>
         <div className="container mx-auto px-4">
           <div className="flex-1">
             <Link href="/" className="flex items-center gap-2">
